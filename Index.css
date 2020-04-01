@@ -4,6 +4,8 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+/* ------> Header <-----*/
+
 header{
     background-color:#f8765e ;
     color: #ffffff;
@@ -11,10 +13,15 @@ header{
     padding-bottom: 100px;
     
 }
+/* ----> Titulo <----*/
+
 header h1{
     padding: 25px;
     font-size: 26px;
 }
+
+/* ----> Nav Bar <----*/
+
 header nav a{
     color: #ffffff;
     text-decoration: none;
@@ -26,9 +33,15 @@ header nav a{
 header nav{
     margin-bottom: 25px;
 }
+
+/* ----> Imagen <----*/
+
 header section img{
     padding: 50px;
 }
+
+/* ----> Tetxo Subscribete <----*/
+
 header section h2{
     font-size: 30px;
     line-height: 40px;
@@ -40,6 +53,9 @@ header section div{
 header section div p{
     line-height: 32px;
 }
+
+/* ----> Formularios <----*/
+
 form input.email{
     display: block;
     border-radius: 20px;
@@ -51,6 +67,7 @@ form input.email{
 }
 form{
     margin: 30px;
+    text-align: center;
 }
 .boton{
     border-radius:20px ;
@@ -61,6 +78,12 @@ form{
     padding-top: 18px;
     padding-bottom: 17px;
 }
+.email::placeholder{
+    color: #cdcdcd
+}
+
+/* ----> Benefit <----*/
+
 main section#Benefit h3{
     color: #031d5b;
     font-size:18px ;
@@ -80,6 +103,8 @@ main section#Benefit p{
     margin-top: 25px;
 }
 
+/* ----> Card Benefit <---- */
+
 main section#Benefit{
     margin-left: 20px;
     margin-right: 20px;
@@ -90,15 +115,23 @@ main section#Benefit{
     margin-top: -60px;
 } 
 
+/* ----> Imágenes dentro de main <----*/
+
 main section img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
+
+/* ----> Pricing <----*/
+
 main section#Pricing img{
     margin: 100px auto 60px; 
 }
+
+/* ----> Texto Pricing <----*/
+
 main section#Pricing h2{
     color: #f8765e;
     font-size: 30px;
@@ -122,16 +155,22 @@ main section#Pricing{
     margin-right: 30px;
     text-align: center;
 }
+
+/* ----> Botón  Pricing <----*/
+
 main section#Pricing button{
     margin-top: 30px;
     margin-bottom: 120px;
 }
+
+/* ----> Testimonials <----*/
+
 main section#Testimonials h4{
     color: #f8765e;
     font-size: 16px;
     font-weight: 700;
     line-height: 30px;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 main section#Testimonials p{
     color: red;
@@ -140,6 +179,68 @@ main section#Testimonials p{
     line-height: 40px;
     margin-left: 60px;
 } 
-main section.persona{
-    margin-top: 78px;
+main section#Testimonials p.persona{
+    padding-top: 78px;
 }
+
+.orangecomillas{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: auto;
+    width: 30%;
+    position: relative;
+    top: -70px;
+    z-index: -1;
+}
+
+
+/* ----> Notificación <----*/
+
+main section h2{ 
+    color: #f8765e;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 20px;
+    text-align: center;
+}
+main section p.product {
+    color: #cdcdcd;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px 30px 50px;
+}
+
+/* ----> Main <---- */
+
+main {
+    margin-bottom: 110px;
+}
+
+/*----> Footer<----*/
+
+footer p.derechos {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+footer{
+    background-color:#f8765e ;
+    color: #ffffff;
+    text-align: center;
+}
+footer nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
