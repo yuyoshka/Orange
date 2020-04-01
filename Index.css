@@ -77,6 +77,7 @@ form{
     background-color:#9bdbe7 ;
     padding-top: 18px;
     padding-bottom: 17px;
+    box-shadow: 0 10px 34px 0 rgba(105, 104, 104, 0.5);
 }
 .email::placeholder{
     color: #cdcdcd
@@ -94,6 +95,9 @@ main section#Benefit h3{
     display: inline-block;
 
 }
+
+/*display in line le da valor de línea a un bloque*/
+
 main section#Benefit p{
     color:#5b6c94 ;
     font-size: 16px;
@@ -127,7 +131,7 @@ main section img{
 /* ----> Pricing <----*/
 
 main section#Pricing img{
-    margin: 100px auto 60px; 
+    margin: 90px auto 60px; 
 }
 
 /* ----> Texto Pricing <----*/
@@ -165,6 +169,20 @@ main section#Pricing button{
 
 /* ----> Testimonials <----*/
 
+main section#Testimonials {
+    position: relative;
+    overflow: scroll;
+    height: 1000px;
+}
+
+/*overflow si recortar contenido, dibujar barras de desplazamiento 
+o mostrar el contenido excedente en un elemento a nivel de bloque 
+overflow: visible
+overflow: hidden
+overflow: scroll
+overflow: auto */
+/* le doy poder raltivo a toda la sección para mover el orangebox en absolute*/
+
 main section#Testimonials h4{
     color: #f8765e;
     font-size: 16px;
@@ -173,14 +191,16 @@ main section#Testimonials h4{
     margin-left: 30px;
 }
 main section#Testimonials p{
-    color: red;
     font-size: 18px;
     font-weight: 500;
     line-height: 40px;
     margin-left: 60px;
+
 } 
+
 main section#Testimonials p.persona{
-    padding-top: 78px;
+    padding-top: 100px;
+    padding-bottom: 60px;
 }
 
 .orangecomillas{
@@ -193,7 +213,55 @@ main section#Testimonials p.persona{
     z-index: -1;
 }
 
+.whitecomillas{
+    display: inline-block;
+    margin: 80px;
+    margin-bottom: 40px;
+    width: 20%;
+}
 
+#Testimonials .wrap {
+    width: 1000px;
+}
+
+/*----> Blue box----*/
+
+.comentario{
+    color:#ffffff;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: #9bdbe7;
+    margin-top: 10px;
+    width: 320px;
+    float: left;
+    box-shadow: 0 10px 34px 0 rgba(119, 118, 118, 0.5);
+    
+}
+/*La propiedad float especifica si un elemento debe salir del 
+flujo normal y aparecer a la izquierda o a la derecha de su contenedor, 
+donde los elementos de texto y los en línea aparecerán a su alrededor.*/
+
+
+/*----> white box <----*/
+
+#Testimonials .comentario.comentario-blanco{
+    background-color: #ffffff;
+    color: #3f3f3f;
+}
+
+/*----> Organge Box <----*/
+
+.orangebox{
+    background-color:#f8765e;     
+    height: 780px; 
+    width: 1000px;  
+    border-radius: 20px;   
+    margin-left: 80px;     
+    z-index: -2;
+    position: absolute;
+    top: 90px
+}
 /* ----> Notificación <----*/
 
 main section h2{ 
@@ -244,3 +312,41 @@ footer nav a{
 
 }
 
+
+/* ------------- Media --------------*/
+
+@media (min-width:800px){
+
+    header #algo{
+        display:flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+    header h1{
+        margin-left: 7%;
+        margin-top: 1%;
+        flex-grow: 1;
+    }
+    header nav{
+        margin-top: 1%;
+        float:right;
+        flex-grow: 3;
+        text-align: right;
+    }
+    header nav a {
+        width: auto;
+        margin: 20px 30px;
+    }
+    #banner{
+        display:flex;
+        justify-content: space-between;
+        flex-direction:row-reverse;
+    
+    }
+    #txt{
+        text-align: left;
+        margin-left: 10%;
+        outline: 1px solid blue;
+    }
+}
+    
