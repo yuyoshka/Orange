@@ -78,6 +78,13 @@ form{
     padding-top: 18px;
     padding-bottom: 17px;
     box-shadow: 0 10px 34px 0 rgba(105, 104, 104, 0.5);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color:blue; 
+
 }
 .email::placeholder{
     color: #cdcdcd
@@ -347,6 +354,43 @@ footer nav a{
         text-align: left;
         margin-left: 10%;
         outline: 1px solid blue;
+    }
+    
+    #cajitas{
+        outline: 1px solid blue;
+        width: 85%;
+        height: 40%;
+        margin-left: 7%;
+        display: flex;
+
+    
+    }
+    #Benefit #cajitas div{
+        outline: 1px solid blue;
+       flex-direction: row;
+        flex-grow: 1;
+        align-items: center;
+
+    }  
+    
+    #Pricing{
+        display:flex;
+        justify-content: space-around;
+
+    }
+    #premium{
+        outline: 1px solid blue;
+        text-align: right;
+        margin-left: 20%;
+        margin-bottom: 0;
+    }
+    #Pricing img{
+        padding:7%;
+    }
+    #Pricing .boton{
+        outline: 1px solid blue;
+        justify-content: flex-end ;
+
     }
 }
     
