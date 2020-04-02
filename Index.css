@@ -66,9 +66,11 @@ form input.email{
     box-shadow: inset 0 1px 5px 0 rgba(0, 0, 0, 0.15);
 }
 form{
-    margin: 30px;
+    margin: auto;
     text-align: center;
 }
+
+
 .boton{
     border-radius:20px ;
     width:168px ;
@@ -353,11 +355,10 @@ footer nav a{
     #txt{
         text-align: left;
         margin-left: 10%;
-        outline: 1px solid blue;
+     
     }
     
     #cajitas{
-        outline: 1px solid blue;
         width: 85%;
         height: 40%;
         margin-left: 7%;
@@ -366,7 +367,6 @@ footer nav a{
     
     }
     #Benefit #cajitas div{
-        outline: 1px solid blue;
        flex-direction: row;
         flex-grow: 1;
         align-items: center;
@@ -379,7 +379,6 @@ footer nav a{
 
     }
     #premium{
-        outline: 1px solid blue;
         text-align: right;
         margin-left: 20%;
         margin-bottom: 0;
@@ -388,9 +387,9 @@ footer nav a{
         padding:7%;
     }
     #Pricing .boton{
-        outline: 1px solid blue;
         justify-content: flex-end ;
 
     }
 }
     
+/*   outline: 1px solid blue;*/
